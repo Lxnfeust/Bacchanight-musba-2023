@@ -40,6 +40,9 @@ function openChapter(id) {
   const playerContainer = nextChapter.querySelector('.player-container');
   const player = new Vimeo.Player(playerContainer, {
     byline: false,
+    portait: false,
+    title: false,
+
   });
   player.play();
 
@@ -61,3 +64,4 @@ function prepareVimeoPlayers() {
     });
   });
 }
+

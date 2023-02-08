@@ -24,6 +24,16 @@ p {
     display: none;
 }
 
+.chapter-unclickable-area {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    background: none;
+    z-index: 5;
+
+}
+
 .chapter {
     background: black;
     position: relative;
@@ -59,6 +69,7 @@ p {
 
 .choices.is-visible {
     display: block;
+    z-index: 20;
 }
 
 .choice {
@@ -68,7 +79,7 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 20;
 }
 
 .choice:first-child {
