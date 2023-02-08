@@ -83,6 +83,15 @@ p {
     background-color: blueviolet;
 }
 
+.choice img {
+    object-fit: contain;
+    width: 100%;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
 .choice {
     width: 33%;
     padding-top: 25%;
