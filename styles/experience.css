@@ -72,15 +72,29 @@ p {
     z-index: 20;
 }
 
+/* placement/réglage de la font */
+.choice p {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: blueviolet;
+}
+
 .choice {
-    width: 30%;
+    width: 33%;
     padding-top: 25%;
     border: 3px solid pink;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 20;
+    border-radius: 10px;
 }
+
+
 
 .choice:first-child {
     left: 50px;
