@@ -1,0 +1,68 @@
+body {
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.chapter {
+    background: black;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.chapter.is-opened {
+    display: block;
+}
+
+.chapter video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.chapter .play-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 10;
+}
+
+.choices {
+    display: none;
+}
+
+.choices.is-visible {
+    display: block;
+}
+
+.choice {
+    width: 30%;
+    padding-top: 25%;
+    border: 3px solid pink;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.choice:first-child {
+    left: 50px;
+}
+
+.choice:last-child {
+    right: 50px;
+}
+
