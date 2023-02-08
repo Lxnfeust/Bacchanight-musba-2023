@@ -36,10 +36,12 @@ p {
     display: block;
 }
 
-.chapter video {
+.chapter video, .chapter .player-container, .chapter iframe {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    /* Empêcher l'usage du player vimeo */
+    /* pointer-events: none; */
 }
 
 .chapter .play-video {

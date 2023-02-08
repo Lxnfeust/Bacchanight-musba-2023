@@ -27,10 +27,37 @@ function openChapter(id) {
 
   const choices = nextChapter.querySelector('.choices')
 
-  const video = nextChapter.querySelector('video');
-  video.play();
+  // Video HTML
+  // const video = nextChapter.querySelector('video');
+  // video.play();
 
-  video.addEventListener('ended', () => {
+  // video.addEventListener('ended', () => {
+  //   choices.classList.add('is-visible');
+  // })
+
+  // Video Vimeo player
+  // Doc : https://github.com/vimeo/player.js/#embed-options
+  const playerContainer = nextChapter.querySelector('.player-container');
+  const player = new Vimeo.Player(playerContainer, {
+    byline: false,
+  });
+  player.play();
+
+  // Passer en plein écran automatiquement
+  // player.requestFullscreen()
+  
+  player.on('ended', () => {
+    playerContainer.style.display = "none";
     choices.classList.add('is-visible');
   })
+}
+
+
+function prepareVimeoPlayers() {
+  chapters.forEach((chapter) => {
+    const playerContainer = chapter.querySelector('.player-container');
+    const player = new Vimeo.Player(playerContainer, {
+      controls: false
+    });
+  });
 }
