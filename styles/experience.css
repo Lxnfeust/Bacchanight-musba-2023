@@ -25,6 +25,7 @@ p {
 }
 
 .affiche {
+    margin-top: 15%;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -46,7 +47,7 @@ p {
     display: flex;
     width: 100vw;
     height: 50vh;
-    background: none;
+    background: blueviolet;
     z-index: 5;
 }
 
