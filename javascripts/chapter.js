@@ -1,3 +1,12 @@
+// function openUnclickableArea(id) {
+//   // on ferme toutes les zones non clickables
+//   unclickableAreas.forEach((chapter-unclickable-area) => {
+//     unclickableAreas.classList.remove('is-opened');
+//   });
+
+//   // zone non clickable manager
+// const unclickableAreas = document.querySelectorAll('.chapter-unclickable-area');
+
 // Introduction
 const startButton = document.getElementById('start-experience-button');
 
