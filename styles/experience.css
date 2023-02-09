@@ -24,14 +24,14 @@ p {
     display: none;
 }
 
-.chapter-unclickable-area {
+.player-container::before {
+    content: "";
     position: absolute;
     display: flex;
     width: 100vw;
     height: 50vh;
     background: none;
     z-index: 5;
-
 }
 
 .chapter {
@@ -84,9 +84,9 @@ p {
     border-radius: 0px 0px 12px 12px;
 }
 
-.choice:hover {
+/* .choice:hover {
     filter: drop-shadow(0px 0px 5px #ffffff);
-}
+} */
 
 .choice {
     object-fit: contain;
@@ -96,7 +96,7 @@ p {
     align-items: center;
     justify-content: center;
     background-image: url("/media/image-tableau-gauche-choix-1.JPG");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
