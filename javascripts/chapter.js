@@ -12,6 +12,7 @@ const startButton = document.getElementById('start-experience-button');
 
 startButton.addEventListener('click', () => {
   openChapter('chapter-1')
+
 });
 
 // Chapters manager
@@ -47,30 +48,30 @@ function openChapter(id) {
   // Video Vimeo player
   // Doc : https://github.com/vimeo/player.js/#embed-options
   const playerContainer = nextChapter.querySelector('.player-container');
-  const player = new Vimeo.Player(playerContainer, {
-    byline: false,
-    portait: false,
-    title: false,
-
+  const dataYoutubeId = playerContainer.getAttribute('data-youtube-id');
+  const player = new YT.Player(playerContainer, {
+    videoId: dataYoutubeId,
+    events: {
+      'onReady': () => {
+        player.playVideo()
+      },
+      'onStateChange': (state) => {
+        if (state.data === 0) {
+          const iframe = nextChapter.querySelector('.player-container');
+          iframe.style.display = "none";
+          choices.classList.add('is-visible');
+        }
+      },
+    }
   });
-  player.play();
-
+  
   // Passer en plein écran automatiquement
   // player.requestFullscreen()
   
-  player.on('ended', () => {
-    playerContainer.style.display = "none";
-    choices.classList.add('is-visible');
-  })
+
 }
 
 
-function prepareVimeoPlayers() {
-  chapters.forEach((chapter) => {
-    const playerContainer = chapter.querySelector('.player-container');
-    const player = new Vimeo.Player(playerContainer, {
-      controls: false
-    });
-  });
-}
+
+// openChapter('affiche-film')
 

@@ -24,8 +24,7 @@ p {
     display: none;
 }
 
-.affiche::before{
-    background-image: url("/media/affiche_Ombre_du_Musee_colo_vert.png");
+.affiche {
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -33,6 +32,9 @@ p {
     transform: translateX(0%);
     transform: translateY(0%);
     border-radius: 15px;
+}
+
+.affiche img{
     height: 150vh;
     border-radius: 15px;
     filter: drop-shadow(0px 0px 5px #ffcc0070);
@@ -79,6 +81,7 @@ p {
 
 .choices {
     display: none;
+    background-color: black;
 }
 
 .choices.is-visible {
