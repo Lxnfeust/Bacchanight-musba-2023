@@ -107,7 +107,7 @@ p {
 
 /* placement/réglage de la font des boutons*/
 .choice p {
-    font-size: 30px;
+    font-size: 4vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +129,7 @@ p {
     align-items: center;
     justify-content: center;
     background-image: url("/media/image-tableau-gauche-choix-1.JPG");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -183,10 +183,10 @@ p {
 
 
 .choice:first-child {
-    left: 50px;
+    left: 6vw;
 }
 
 .choice:last-child {
-    right: 50px;
+    right: 6vw;
 }
 
