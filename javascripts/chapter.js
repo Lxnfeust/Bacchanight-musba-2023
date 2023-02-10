@@ -51,6 +51,11 @@ function openChapter(id) {
   const dataYoutubeId = playerContainer.getAttribute('data-youtube-id');
   const player = new YT.Player(playerContainer, {
     videoId: dataYoutubeId,
+    playerVars: {
+      modestbranding:true,
+      rel:0,
+      showinfo:0,
+    },
     events: {
       'onReady': () => {
         player.playVideo()
