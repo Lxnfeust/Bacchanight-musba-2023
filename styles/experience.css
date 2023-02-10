@@ -131,6 +131,42 @@ p {
     background-repeat: no-repeat;
 }
 
+#bouton-choix-gauche-chap-1 {
+    background-image: url("/media/image-tableau-gauche-choix-1.JPG");
+}
+
+#bouton-choix-droite-chap-1 {
+    background-image: url("/media/image-tableau-droite-choix-1.JPG");
+}
+
+#bouton-choix-wagon-chap-2a1 {
+    background-image: url("/media/image-element-tableau-a-wagon.png");
+}
+
+#bouton-choix-tour-chap-2a2 {
+    background-image: url("/media/image-element-tableau-a-tour.png");
+}
+
+#bouton-choix-cabanon-chap-2b1 {
+    background-image: url("/media/image-element-tableau-b-cabanon.png");
+}
+
+#bouton-choix-pont-chap-2b2 {
+    background-image: url("/media/image-element-tableau-b-pont.png");
+}
+
+#bouton-choix-gauche-chap-3 {
+    background-image: url("/media/image-tableau-gauche-choix-3.png");
+}
+
+#bouton-choix-droite-chap-3 {
+    background-image: url("/media/image-tableau-droite-choix-3.png");
+}
+
+#bouton-retour-accueil {
+    background-image: url("/media/affiche_Ombre_du_Musee_colo_vert.png");
+}
+
 .choice {
     width: 33%;
     padding-top: 20%;
