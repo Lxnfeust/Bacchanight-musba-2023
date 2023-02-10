@@ -63,6 +63,7 @@ function openChapter(id) {
       'onStateChange': (state) => {
         if (state.data === 0) {
           const iframe = nextChapter.querySelector('.player-container');
+          exitFullScreen();
           iframe.style.display = "none";
           choices.classList.add('is-visible');
         }
@@ -70,6 +71,17 @@ function openChapter(id) {
     }
   });
   
+  function exitFullScreen () {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+  } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+  }
+  }
   // Passer en plein écran automatiquement
   // player.requestFullscreen()
   
