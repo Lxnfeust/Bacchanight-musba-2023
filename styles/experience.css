@@ -161,7 +161,7 @@ p {
 
 /* placement/réglage de la font des boutons*/
 .choice p {
-    font-size: 4vw;
+    font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,6 +249,17 @@ p {
         height: 80vh;
         border-radius: 15px;
         filter: drop-shadow(0px 0px 5px #ffcc0070);
+    }
+
+    .choice p {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: black;
+        border-radius: 0px 0px 12px 12px;
     }
 }
 
@@ -393,5 +404,16 @@ p {
         height: 50vh;
         border-radius: 15px;
         filter: drop-shadow(0px 0px 5px #ffcc0070);
+    }
+
+    .choice p {
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: black;
+        border-radius: 0px 0px 12px 12px;
     }
 }
