@@ -220,6 +220,7 @@ p {
 
 #bouton-retour-accueil {
     background-image: url("/media/affiche_Ombre_du_Musee_colo_vert.png");
+    background-size: cover;
 }
 
 .choice {
