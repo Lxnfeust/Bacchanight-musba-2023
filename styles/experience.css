@@ -101,7 +101,6 @@ p {
 }
 
 .affiche {
-    margin-top: 15%;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -112,7 +111,7 @@ p {
 }
 
 .affiche img{
-    height: 130vh;
+    height: 100vh;
     border-radius: 15px;
     filter: drop-shadow(0px 0px 5px #ffcc0070);
 }
@@ -243,6 +242,8 @@ p {
 .choice:last-child {
     right: 6vw;
 }
+
+
 
 @media screen and (max-width:1000px) {
     .affiche img{
@@ -390,7 +391,6 @@ p {
     }
 
     .affiche {
-        margin-top: 15%;
         object-fit: cover;
         display: flex;
         align-items: center;
