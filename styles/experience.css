@@ -244,9 +244,71 @@ p {
     right: 6vw;
 }
 
+@media screen and (max-width:1000px) {
+    .affiche img{
+        height: 80vh;
+        border-radius: 15px;
+        filter: drop-shadow(0px 0px 5px #ffcc0070);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .wrapper {
+        display: block;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    .wrapper p {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+        padding: 15px;
+    }
+      
+    .one {
+        margin: 10px 10px 0px 0px;
+        display: block;
+    }
+      
+    .two {
+        margin: 10px 10px 0px 0px;
+        display: block;
+    }
+      
+    .three {
+        margin: 10px 10px 0px 0px;
+        display: block;
+    }
+      
+    .four {
+        margin: 10px 10px 0px 0px;
+        display: block;
+    }
+      
+    .five {
+        margin: 10px 10px 0px 0px;
+        display: block;
+    }
+      
+    .logoMmi {
+        margin: 10px 10px 0px 0px;
+        display: block;
+    }
+      
+    .pp {
+        width: 180px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width:680px) {
-   
-    
 
     .wrapper {
         display: block;
@@ -295,7 +357,7 @@ p {
     }
       
     .pp {
-        width: 150px;
+        width: 130px;
         margin: auto;
         display: flex;
         align-items: center;
