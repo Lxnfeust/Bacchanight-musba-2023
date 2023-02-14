@@ -8,6 +8,10 @@ body{
     background-color: black;
 }
 
+.presentationProj {
+    margin: 0px 200px 0px 200px ;
+}
+
 a {
     color: white;
 }
@@ -420,5 +424,12 @@ p {
         padding-top: 20px;
         background-color: black;
         border-radius: 0px 0px 12px 12px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .presentationProj {
+        margin: 0px 100px 0px 100px ;
     }
 }
